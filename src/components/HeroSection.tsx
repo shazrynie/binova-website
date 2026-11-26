@@ -5,8 +5,8 @@ interface HeroSectionProps {
   onOpenPosterModal: (initialSrc: string, title: string) => void;
 }
 
-const PRODUCT_IMAGE = '/assets/aistudio/product.png_2bc50c8c.png';
-const POSTER_IMAGE = '/assets/aistudio/BINOVA__Smart_Underground_Waste_Management_Poster_6ad11f68.png';
+const PRODUCT_IMAGE = './assets/aistudio/product.png_2bc50c8c.png';
+const POSTER_IMAGE = './assets/aistudio/BINOVA__Smart_Underground_Waste_Management_Poster_6ad11f68.png';
 
 const BASELINE_KPIS = [
   {
