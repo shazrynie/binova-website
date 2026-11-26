@@ -198,6 +198,32 @@ export default function RecoveryAndFooter() {
                   </button>
                 </form>
               )}
+
+              <div className="mt-5 pt-4 border-t border-[#24302C] flex items-center justify-between gap-4 text-xs text-[#9FB0A8]">
+                <span>Follow field deployments &amp; eco-township updates</span>
+                <a
+                  href="https://www.instagram.com/binova.systems/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 font-semibold text-[#86EFAC] hover:text-[#F2F5F3] transition-colors whitespace-nowrap shrink-0"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-3.5 h-3.5 shrink-0"
+                    aria-hidden="true"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                  <span>@binova.systems</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -223,6 +249,29 @@ export default function RecoveryAndFooter() {
             </a>
             <a href="#storefront" className="hover:text-[#F2F5F3] transition-colors">
               Storefront
+            </a>
+            <a
+              href="https://www.instagram.com/binova.systems/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="BINOVA on Instagram"
+              className="inline-flex items-center gap-1.5 text-[#86EFAC] hover:text-[#F2F5F3] transition-colors whitespace-nowrap"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-3.5 h-3.5 shrink-0"
+                aria-hidden="true"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+              <span>Instagram</span>
             </a>
             <span>&copy; 2026 BINOVA Environmental Systems</span>
           </div>
