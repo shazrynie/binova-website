@@ -108,6 +108,7 @@ export default function StorefrontCatalog({ onAddToBag, onInspectItem }: Storefr
   const [selectedCategory, setSelectedCategory] = useState<CategoryFilter>('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [recentlyAddedId, setRecentlyAddedId] = useState<string | null>(null);
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
 
   const filteredItems = CATALOG_ITEMS.filter((item) => {
     const matchesCategory = selectedCategory === 'All' || item.category === selectedCategory;
@@ -225,7 +226,21 @@ export default function StorefrontCatalog({ onAddToBag, onInspectItem }: Storefr
                   className="bg-[#F7F9F8] border border-[#DCE4E0] rounded-xl overflow-hidden flex flex-col justify-between transition-transform duration-150 hover:-translate-y-0.5"
                 >
                   <div>
-                    <SchematicPreview variant={item.schematicVariant} />
+                    {!failedImages[item.id] ? (
+                      <div className="w-full aspect-[4/3] bg-[#EAEFED] border-b border-[#DCE4E0] overflow-hidden">
+                        <img
+                          src={item.imageSrc}
+                          alt={item.name}
+                          referrerPolicy="no-referrer"
+                          onError={() =>
+                            setFailedImages((prev) => ({ ...prev, [item.id]: true }))
+                          }
+                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]"
+                        />
+                      </div>
+                    ) : (
+                      <SchematicPreview variant={item.schematicVariant} />
+                    )}
 
                     <div className="p-6">
                       {/* Unboxed 1-line metadata */}

@@ -37,6 +37,7 @@ export interface CatalogItem {
   annualCo2SavingsTonnes: number;
   specs: string[];
   schematicVariant: 'station' | 'optical' | 'solar' | 'biopod' | 'portal' | 'care';
+  imageSrc: string;
 }
 
 export interface RecoveryStage {
@@ -233,6 +234,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
       'Child & finger safety sensor lock + UV panel interlock + pipe thermal fire suppression',
     ],
     schematicVariant: 'station',
+    imageSrc: './src/assets/images/product_binova_station_1795660514238.jpg',
   },
   {
     id: 'ai-optical-kit',
@@ -252,6 +254,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
       'Cuts Recovery Centre sorting rejects by up to 68%',
     ],
     schematicVariant: 'optical',
+    imageSrc: './src/assets/images/product_ai_optical_kit_1795660514603.jpg',
   },
   {
     id: 'solar-microgrid-pack',
@@ -271,6 +274,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
       'Grid-failover readiness for uninterrupted community waste collection',
     ],
     schematicVariant: 'solar',
+    imageSrc: './src/assets/images/product_solar_microgrid_1795660515660.jpg',
   },
   {
     id: 'enzymatic-biopod',
@@ -290,6 +294,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
       'Connects inline with standard 250 mm pneumatic suction manifolds',
     ],
     schematicVariant: 'biopod',
+    imageSrc: './src/assets/images/product_enzymatic_biopod_1795660515645.jpg',
   },
   {
     id: 'resident-esg-portal',
@@ -309,6 +314,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
       'Includes API webhooks for municipal utility ERP systems',
     ],
     schematicVariant: 'portal',
+    imageSrc: './src/assets/images/product_esg_portal_1795660516303.jpg',
   },
   {
     id: 'annual-care-pack',
@@ -328,6 +334,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
       'Guaranteed 4-hour emergency SLA dispatch from regional hub',
     ],
     schematicVariant: 'care',
+    imageSrc: './src/assets/images/product_annual_care_pack_1795660516611.jpg',
   },
 ];
 

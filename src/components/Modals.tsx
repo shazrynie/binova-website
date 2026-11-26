@@ -88,7 +88,16 @@ export function ProductSpecModal({ item, onClose, onAddToBag }: SpecModalProps) 
           </button>
         </div>
 
-        <div className="p-6 space-y-5">
+        <div className="p-6 space-y-5 max-h-[80vh] overflow-y-auto">
+          <div className="w-full aspect-[16/9] rounded-lg overflow-hidden border border-[#DCE4E0] bg-[#EAEFED]">
+            <img
+              src={item.imageSrc}
+              alt={item.name}
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
           <p className="text-sm text-[#4A5D57] leading-relaxed">{item.tagline}</p>
 
           <div>
