@@ -9,8 +9,9 @@
 @layer base {
   html {
     font-family: var(--font-sans);
-    color: #111E1A;
-    background-color: #F7F9F8;
+    color: #F2F5F3;
+    background-color: #090D0C;
+    letter-spacing: 0.005em;
   }
 
   h1, h2, h3, h4, .font-display {
